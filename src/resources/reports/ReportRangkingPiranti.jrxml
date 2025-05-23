@@ -131,9 +131,9 @@ ORDER BY total_nilai DESC;]]>
 	<pageHeader>
 		<band height="80" splitType="Stretch">
 			<frame>
-				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="100" forecolor="#FFFCFC" backcolor="#080808" uuid="7e98f9c9-b4bc-4798-ae96-2583a5e9a307"/>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="100" forecolor="#FFFCFC" backcolor="#04022e" uuid="342e97e8-1c75-459e-af78-36180d6d006e"/>
 				<staticText>
-					<reportElement x="110" y="10" width="350" height="30" forecolor="#FCFAFA" uuid="6785d7e6-6316-4b0c-9d80-c0b775ac6a42"/>
+					<reportElement x="125" y="10" width="350" height="30" forecolor="#FCFAFA" uuid="f99744a1-56cd-4f60-9389-a73b3072abb2"/>
 					<textElement textAlignment="Center">
 						<font fontName="Times New Roman" size="20" isBold="true"/>
 						<paragraph lineSpacingSize="1.0"/>
@@ -141,18 +141,18 @@ ORDER BY total_nilai DESC;]]>
 					<text><![CDATA[PT PRESTASI PIRANTI INFORMASI]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="142" y="40" width="310" height="20" forecolor="#FFFAFA" uuid="e702c6a7-60b3-455d-a624-de057627a8d4"/>
+					<reportElement x="165" y="40" width="310" height="20" forecolor="#FFFAFA" uuid="8f4c8fe0-8216-4a97-9060-9c59ce5ab0fa"/>
 					<textElement>
 						<font fontName="Times New Roman"/>
 					</textElement>
-					<text><![CDATA[Jl. Raya Bogor Cililitan No.20, RT.1/RW.15, Cililitan, Kec. Kramat jati]]></text>
+					<text><![CDATA[Menara Kadin Lantai 11 Suite EG Jl. Rasuna Said Blok X-5 Kav. 2-3]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="153" y="60" width="267" height="20" forecolor="#FCFAFA" uuid="91ee8aa4-c74c-4263-a8bb-122ef1c37633"/>
-					<text><![CDATA[Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13640]]></text>
+					<reportElement x="200" y="60" width="267" height="20" forecolor="#FCFAFA" uuid="d328ae76-e696-4871-931b-5648e5e00920"/>
+					<text><![CDATA[Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950]]></text>
 				</staticText>
 				<image>
-					<reportElement x="40" y="25" width="50" height="50" uuid="23d5bb3f-e081-4190-9f1d-1a95495589ee"/>
+					<reportElement x="40" y="10" width="100" height="100" uuid="23d5bb3f-e081-4190-9f1d-1a95495589ee"/>
                                         <imageExpression><![CDATA[$P{PATH}+"neuviz.png"]]></imageExpression>
 				</image>
 			</frame>
@@ -165,7 +165,7 @@ ORDER BY total_nilai DESC;]]>
 				<textElement textAlignment="Center">
 					<font size="20" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Laporan Rangking]]></text>
+				<text><![CDATA[Laporan Ranking]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
@@ -193,7 +193,7 @@ ORDER BY total_nilai DESC;]]>
 								<textElement textAlignment="Center">
 									<paragraph spacingBefore="10"/>
 								</textElement>
-								<text><![CDATA[Nama Peserta]]></text>
+								<text><![CDATA[Nama]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table_TD" height="30">
@@ -241,7 +241,7 @@ ORDER BY total_nilai DESC;]]>
 								<textElement textAlignment="Center">
 									<paragraph spacingBefore="10"/>
 								</textElement>
-								<text><![CDATA[Rangking]]></text>
+								<text><![CDATA[Ranking]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table_TD" height="30">

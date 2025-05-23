@@ -61,7 +61,7 @@ import net.sf.jasperreports.view.JasperViewer;
             // Set Model untuk JTable
             DefaultTableModel model = new DefaultTableModel();
             model.setColumnIdentifiers(new Object[]{
-                "ID Peseta", "Nama", "Alamat",
+                "ID Pelanggan", "Nama", "Alamat",
             });
 
             // Masukkan data karyawan ke dalam model JTable
@@ -96,8 +96,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
                 // Ambil data dari baris yang diklik
                 String nama = jTable1.getValueAt(selectedRow, 1).toString();
-                String usia = jTable1.getValueAt(selectedRow, 2).toString();
-                String alamat = jTable1.getValueAt(selectedRow, 3).toString();
+                String alamat = jTable1.getValueAt(selectedRow, 2).toString();
                 
                 this.selectedId = jTable1.getValueAt(selectedRow, 0).toString();
 

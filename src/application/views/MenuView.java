@@ -86,14 +86,14 @@ public class MenuView extends javax.swing.JFrame {
         // Panel utama
         jPanel1.setLayout(new BorderLayout()); // penting supaya anak komponen fleksibel ukurannya
 
-        Sidebar.setBackground(Color.BLACK);
+        Sidebar.setBackground(new Color(4, 2, 79));
         Sidebar.setPreferredSize(new Dimension(250, 0)); // 200px lebar, tinggi otomatis
         jPanel1.add(Sidebar, BorderLayout.WEST);
         
         jPanel2.setLayout(new BorderLayout());
         
         Header.setLayout(new BorderLayout());
-        Header.setBackground(Color.GRAY);
+        Header.setBackground(new Color(4, 2, 46));
         Header.setPreferredSize(new Dimension(0, 120));
         Header.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 40)); // Padding: atas, kiri, bawah, kanan
 
@@ -178,7 +178,7 @@ public class MenuView extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        Sidebar.setBackground(new java.awt.Color(0, 0, 0));
+        Sidebar.setBackground(new java.awt.Color(4, 2, 79));
         Sidebar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 SidebarMouseEntered(evt);

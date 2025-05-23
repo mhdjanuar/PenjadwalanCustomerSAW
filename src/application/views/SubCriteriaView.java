@@ -42,7 +42,7 @@ public class SubCriteriaView extends javax.swing.JPanel {
         List<SubCriteriaModel> subCriteriaList = subCriteriaDao.findAll();
         
         DefaultTableModel model = new DefaultTableModel();
-        model.setColumnIdentifiers(new Object[]{"Id", "Kriteria", "Deksripsi", "Bobot"}); // Adjust column names as needed
+        model.setColumnIdentifiers(new Object[]{"ID", "Kriteria", "Deksripsi", "Bobot"}); // Adjust column names as needed
 
         // Populate the model with data from spareparts
         for (SubCriteriaModel subCriteria : subCriteriaList) {
@@ -306,7 +306,7 @@ public class SubCriteriaView extends javax.swing.JPanel {
         int result = subCriteriaDao.create(subCriteria);
         
         if (result > 0) {
-            JOptionPane.showMessageDialog(this, "Data added successfully!");
+            JOptionPane.showMessageDialog(this, "Data berhasil disimpan.");
             
             getAllData();
             resetForm();

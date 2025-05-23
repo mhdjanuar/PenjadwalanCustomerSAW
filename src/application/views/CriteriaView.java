@@ -36,11 +36,20 @@ public class CriteriaView extends javax.swing.JPanel {
         List<CriteriaModel> criteriaList = criteriaDao.findAll();
         
         DefaultTableModel model = new DefaultTableModel();
-        model.setColumnIdentifiers(new Object[]{"Id", "Nama", "Type", "Bobot"}); // Adjust column names as needed
+        model.setColumnIdentifiers(new Object[]{"ID", "Nama", "Type", "Bobot"}); // Adjust column names as needed
 
         // Populate the model with data from spareparts
         for (CriteriaModel criteria : criteriaList) {
-            model.addRow(new Object[]{criteria.getId(), criteria.getName(), criteria.getType(), criteria.getBobot()}); // Add more attributes as needed
+            String type = criteria.getType();
+            String typeResult = type != null && !type.isEmpty()
+                ? type.substring(0, 1).toUpperCase() + type.substring(1)
+                : type;
+            
+            model.addRow(new Object[]{
+                criteria.getId(), 
+                criteria.getName(), 
+                typeResult, 
+                criteria.getBobot()}); // Add more attributes as needed
         }
         
         // Set the table model to jTable1
