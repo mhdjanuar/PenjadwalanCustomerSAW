@@ -313,11 +313,11 @@ import net.sf.jasperreports.view.JasperViewer;
 //         Simpan ke DB (uncomment baris ini untuk mengaktifkan penyimpanan)
          int result = karyawanDao.create(karyawan);
          if (result > 0) {
-             JOptionPane.showMessageDialog(this, "Data karyawan berhasil disimpan.");
+             JOptionPane.showMessageDialog(this, "Data pelanggan berhasil disimpan.");
              getAllData();
              clearForm();
          } else {
-             JOptionPane.showMessageDialog(this, "Gagal menyimpan data karyawan.");
+             JOptionPane.showMessageDialog(this, "Gagal menyimpan data pelanggan.");
          }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -335,11 +335,11 @@ import net.sf.jasperreports.view.JasperViewer;
         // Panggil fungsi update di DAO
         int result = karyawanDao.update(karyawan);
         if (result > 0) {
-            JOptionPane.showMessageDialog(this, "Data karyawan berhasil diperbarui.");
+            JOptionPane.showMessageDialog(this, "Data pelanggan berhasil diperbarui.");
             getAllData();  // Refresh data yang ada di tabel
             clearForm();
         } else {
-            JOptionPane.showMessageDialog(this, "Gagal memperbarui data karyawan.");
+            JOptionPane.showMessageDialog(this, "Gagal memperbarui data pelanggan.");
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
