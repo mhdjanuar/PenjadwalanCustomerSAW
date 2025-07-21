@@ -247,7 +247,7 @@ on sc.id_kreteria = c.id]]>
 								<textElement textAlignment="Center">
 									<paragraph spacingBefore="10"/>
 								</textElement>
-								<text><![CDATA[DESKRIPSI]]></text>
+								<text><![CDATA[DEKSRIPSI]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table_TD" height="30">
@@ -303,24 +303,24 @@ on sc.id_kreteria = c.id]]>
 				<textFieldExpression><![CDATA["Jakarta, " + new java.text.SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="-18" y="50" width="588" height="19" uuid="d6ca43a9-e812-4754-b76b-94d101c5c19b">
+				<reportElement x="10" y="50" width="558" height="19" uuid="d6ca43a9-e812-4754-b76b-94d101c5c19b">
 					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
 					<font isBold="true"/>
 					<paragraph rightIndent="40"/>
 				</textElement>
-				<text><![CDATA[HRD]]></text>
+				<text><![CDATA[Tech Manager]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="-17" y="130" width="577" height="24" uuid="d10d5d80-50d5-442f-a346-8993376c0a28">
+				<reportElement x="-17" y="130" width="547" height="24" uuid="d10d5d80-50d5-442f-a346-8993376c0a28">
 					<property name="com.jaspersoft.studio.unit.spacingBefore" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
 					<paragraph rightIndent="10"/>
 				</textElement>
-				<text><![CDATA[Arya Anindita]]></text>
+				<text><![CDATA[Hendra L]]></text>
 			</staticText>
 		</band>
 	</columnFooter>
